@@ -51,13 +51,11 @@ if(NOT BUILD_OPENGL)
       ${PROJECT_INCLUDE_DIR}/common.h
       ${PROJECT_INCLUDE_DIR}/stb_image_write.h
   )
-  else()
     add_executable(
       holoCu
       src/headless.cpp
       ${SOURCES}
     )
-  endif()
 endif()
 
 # run full.cpp
