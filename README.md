@@ -9,7 +9,7 @@ This is a CUDA implementation/simulator of “Energy Efficient Adaptive 3D Sensi
   </div>
 </div>
 
-## CVPR 2023 Demo
+## CVPR 2023 Demo Video
 <p align="center">Click on image to see high-res real-time adaptive active stereo demo video of our holographic projector using the full version of holoCu.</p>
 <p align="center">
   <a href="https://www.youtube.com/watch?v=31lPWl-AU_w" style="display: block; margin: 0 auto;">
