@@ -9,16 +9,15 @@ This is a CUDA implementation/simulator of “Energy Efficient Adaptive 3D Sensi
   </div>
 </div><br>
 
+
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center;">
-  <p align="center">Real time active stereo demo of our holographic projector adaptively tracking regions of interest using the full version of holoCu.</p>
-  <video width="50%" height="10%" controls>
-    <source src="https://drive.google.com/file/d/1xj7Gai3tkXhtego1VG39v1e4GyaPFfDH/view?usp=share_link" type="video/mp4">
-  </video>
-
+    <p align="center">Real time active stereo demo of our holographic projector adaptively tracking regions of interest using the full version of holoCu.</p>
+    <p align="center"><img src="data/marketing/realtimedemo.gif" alt="My GIF" width="100%" height="10%"></p>
   </div>
 </div><br>
 
+  
 
 > **Energy-Efficient Adaptive 3D Sensing** <br>
 > [Brevin Tilmon](https://btilmon.github.io/)<sup>1,2</sup>, [Zhanghao Sun](https://zhsun0357.github.io/)<sup>3</sup>, [Sanjeev Koppal](https://focus.ece.ufl.edu/people/)<sup>2</sup>, [Yicheng Wu](https://yichengwu.github.io/)<sup>1</sup>, [Georgios Evangelidis](https://sites.google.com/site/georgeevangelidis/)<sup>1</sup>, [Ramzi Zahreddine](https://www.linkedin.com/in/ramzi-zahreddine-42a09b87/)<sup>1</sup>, [Guru Krishnan](https://www.linkedin.com/in/krishnanguru/)<sup>1</sup>, [Sizhuo Ma](https://sizhuoma.netlify.app/)<sup>1</sup>, and [Jian Wang](https://jianwang-cmu.github.io/)<sup>1</sup> <br>
