@@ -7,17 +7,18 @@ This is a CUDA implementation/simulator of “Energy Efficient Adaptive 3D Sensi
   <div style="text-align: center;">
     <p align="center"><img src="data/marketing/teaser.gif" alt="My GIF" width="100%" height="10%"></p>
   </div>
-</div><br>
+</div>
+
+## CVPR 2023 Demo
+<p align="center">Click on image to see high-res real-time adaptive active stereo demo video of our holographic projector using the full version of holoCu.</p>
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=31lPWl-AU_w" style="display: block; margin: 0 auto;">
+    <img src="data/marketing/demopic.png" alt="IMAGE ALT TEXT" width="65%" height="10%">
+  </a>
+</p>
+<br>
 
 
-<div style="display: flex; justify-content: center;">
-  <div style="text-align: center;">
-    <p align="center">Real time active stereo demo of our holographic projector adaptively tracking regions of interest using the full version of holoCu.</p>
-    <p align="center"><img src="data/marketing/realtimedemo.gif" alt="My GIF" width="100%" height="10%"></p>
-  </div>
-</div><br>
-
-  
 
 > **Energy-Efficient Adaptive 3D Sensing** <br>
 > [Brevin Tilmon](https://btilmon.github.io/)<sup>1,2</sup>, [Zhanghao Sun](https://zhsun0357.github.io/)<sup>3</sup>, [Sanjeev Koppal](https://focus.ece.ufl.edu/people/)<sup>2</sup>, [Yicheng Wu](https://yichengwu.github.io/)<sup>1</sup>, [Georgios Evangelidis](https://sites.google.com/site/georgeevangelidis/)<sup>1</sup>, [Ramzi Zahreddine](https://www.linkedin.com/in/ramzi-zahreddine-42a09b87/)<sup>1</sup>, [Guru Krishnan](https://www.linkedin.com/in/krishnanguru/)<sup>1</sup>, [Sizhuo Ma](https://sizhuoma.netlify.app/)<sup>1</sup>, and [Jian Wang](https://jianwang-cmu.github.io/)<sup>1</sup> <br>
