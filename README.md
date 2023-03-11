@@ -14,7 +14,7 @@ This is a CUDA implementation/simulator of “Energy Efficient Adaptive 3D Sensi
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center;">
-    <p align="center"><img src="data/marketing/output.gif" alt="My GIF" width="80%" height="10%"></p>
+    <p align="center"><img src="data/marketing/output.gif" alt="My GIF" width="100%" height="10%"></p>
   </div>
 </div>
 
