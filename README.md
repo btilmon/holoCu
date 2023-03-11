@@ -137,7 +137,7 @@ Total:                2.69008
 
 ```
 
-Here is a video of it working:
+**See our adaptive active stereo demo at the top of the README for an example of what the full version can do.** If just visualizing on a monitor though, here is an example of visualizing the simualted line holograms on a monitor with the full version:
 
 <p align="left">
   <img src="data/marketing/lineDemo.gif" alt="My GIF" width="320" height="180">
