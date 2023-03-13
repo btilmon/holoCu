@@ -28,6 +28,17 @@ This is a CUDA implementation/simulator of “Energy Efficient Adaptive 3D Sensi
 > CVPR 2023<br>
 > Paper (Coming Soon)
 
+
+```
+@inproceedings{tilmon2023e3d,
+  title     = {Energy-Efficient Adaptive 3D Sensing},
+  author    = {Tilmon, Brevin and Sun, Zhanghao and Koppal, Sanjeev and Wu, Yicheng and Evangelidis, Georgios and Zahreddine, Ramzi and Krishnan, Guru and Ma, Sizhuo and Wang, Jian},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2023},
+}
+```
+
 ## Dependencies
 There are full and headless versions. The full version renders hologram information to either a monitor or SLM using OpenGL-CUDA interop, and the headless version simply renders hologram information to an image with no hardware required. You only need to install OpenGL for the full version.
 
