@@ -17,7 +17,11 @@
 
 
 
-This repository contains a CUDA implementation/simulator for the holographic projector introduced in our "Energy Efficient Adaptive 3D Sensing" paper in CVPR 2023. The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1, as well as on most other NVIDIA GPUs. A holographic projector can be considered a software-defined 3D sensor. The hologram of the desired projector pattern is computed in software and subsequently displayed on a spatial light modulator, which then diffracts light to form the hologram within the scene. A key property of holographic projectors is their ability to redistribute light. This means that as the number of hologram points increases, the intensity of each point decreases, since the laser light must be shared among all points. We leverage this light redistribution property to achieve higher signal-to-noise ratios (SNR) and accuracy in active depth sensing compared to state-of-the-art 3D sensors, such as EpiScan3D and Microsoft Kinect/Intel RealSense. Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Light Modulator using this repository. The 3D sensors shown below are adaptive (our method), line scanning (EpiScan3D), and full frame (Kinect/Intel RealSense), displayed from left to right. The images from top to bottom represent estimated phase, simulated hologram, and the actual hologram from a spatial light modulator.
+This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. 
+
+A holographic projector can be considered a software-defined 3D sensor. The hologram of the desired projector pattern is computed in software and subsequently displayed on a spatial light modulator, which then diffracts light to form the hologram within the scene. A key property of holographic projectors is their ability to redistribute light. This means that as the number of hologram points increases, the intensity of each point decreases, since the laser light must be shared among all points. We leverage this light redistribution property to achieve higher signal-to-noise ratios (SNR) and accuracy in active depth sensing compared to state-of-the-art 3D sensors, such as [EpiScan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). 
+
+Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Light Modulator using this repository. The 3D sensors shown below are adaptive (our method), line scanning (EpiScan3D), and full frame (Kinect/Intel RealSense), displayed from left to right. The images from top to bottom represent estimated phase, simulated hologram, and the actual hologram from a spatial light modulator.
 
 
 
@@ -170,7 +174,7 @@ Our fused CUDA implementation of Fresnel Holography (pointwise integration of di
 
 ## Citation
 
-If you found our code useful, please cite our paper:
+If you found our work useful, please cite our paper:
 ```bibtex
 @inproceedings{tilmon2023e3d,
   title     = {Energy-Efficient Adaptive 3D Sensing},
