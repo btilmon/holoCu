@@ -94,7 +94,7 @@ Total:                1.40202
 
 ```
 
-Here is an example saved file:
+Here is an example saved image with the hologram phase on top and simulated hologram amplitude on bottom:
 
 <p align="left">
   <img src="data/marketing/adaptive.png" width="320" height="380">
