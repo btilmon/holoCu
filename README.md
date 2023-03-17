@@ -1,5 +1,23 @@
 # <p align="center">Energy-Efficient Adaptive 3D Sensing [CVPR 2023]</p>
-This is a CUDA implementation/simulator of the holographic projector developed for “Energy Efficient Adaptive 3D Sensing” in CVPR 2023. It enables real time sparse hologram generation on embedded NVIDIA GPU’s like Tegra X1 and most NVIDIA GPU’s. What is a holographic projector? A holographic projector can redistribute light, which means that the intensity of each hologram point decreases as the number of hologram points increases since the laser has to share light between each hologram point. Since we can compute any desired projector pattern's hologram in software, you can think of our work as a software-defined 3D sensor. We exploit the light redistribution property to achieve higher SNR/accuracy for active depth sensing compared to state of the art 3D sensors such as [EpiScan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). We validate our approach on a real Holoeye GAEA 1 Spatial Light Modulator using holoCu. The simulated 3D sensors below, from left to right, are adaptive (ours), line scanning (EpiScan3D), and full frame (Kinect/Intel RealSense). From top to bottom: estimated phase, simulated hologram, real hologram from a spatial light modulator.
+
+<p align="center">
+  <a href="https://btilmon.github.io/">Brevin Tilmon</a><sup>1</sup>,
+  <a href="https://zhsun0357.github.io/">Zhanghao Sun</a><sup>2</sup>,
+  <a href="https://focus.ece.ufl.edu/people/">Sanjeev Koppal</a><sup>1</sup>,
+  <a href="https://yichengwu.github.io/">Yicheng Wu</a><sup>3</sup>, <br>
+  <a href="https://sites.google.com/site/georgeevangelidis/">Georgios Evangelidis</a><sup>3</sup>,
+  <a href="https://www.linkedin.com/in/ramzi-zahreddine-42a09b87/">Ramzi Zahreddine</a><sup>3</sup>,
+  <a href="https://www.linkedin.com/in/krishnanguru/">Guru Krishnan</a><sup>3</sup>,
+  <a href="https://sizhuoma.netlify.app/">Sizhuo Ma</a><sup>3</sup>, 
+  <a href="https://jianwang-cmu.github.io/">Jian Wang</a><sup>3</sup> <br>
+  University of Florida<sup>1</sup>, Stanford University<sup>2</sup>, Snap Research<sup>3</sup>
+</p>
+
+### <p align="center">Paper (Coming Soon) | [Project Page](https://btilmon.github.io/e3d.html)</p>
+
+
+
+This repository contains a CUDA implementation/simulator for the holographic projector introduced in our "Energy Efficient Adaptive 3D Sensing" paper in CVPR 2023. The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1, as well as on most other NVIDIA GPUs. A holographic projector can be considered a software-defined 3D sensor. The hologram of the desired projector pattern is computed in software and subsequently displayed on a spatial light modulator, which then diffracts light to form the hologram within the scene. A key property of holographic projectors is their ability to redistribute light. This means that as the number of hologram points increases, the intensity of each point decreases, since the laser light must be shared among all points. We leverage this light redistribution property to achieve higher signal-to-noise ratios (SNR) and accuracy in active depth sensing compared to state-of-the-art 3D sensors, such as EpiScan3D and Microsoft Kinect/Intel RealSense. Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Light Modulator using this repository. The 3D sensors shown below are adaptive (our method), line scanning (EpiScan3D), and full frame (Kinect/Intel RealSense), displayed from left to right. The images from top to bottom represent estimated phase, simulated hologram, and the actual hologram from a spatial light modulator.
 
 
 
@@ -17,27 +35,6 @@ This is a CUDA implementation/simulator of the holographic projector developed f
     <p align="center"><img src="data/marketing/output.gif" alt="My GIF" width="100%" height="10%"></p>
   </div>
 </div>
-
-<br>
-
-
-
-> **Energy-Efficient Adaptive 3D Sensing** <br>
-> [Brevin Tilmon](https://btilmon.github.io/)<sup>1</sup>, [Zhanghao Sun](https://zhsun0357.github.io/)<sup>2</sup>, [Sanjeev Koppal](https://focus.ece.ufl.edu/people/)<sup>1</sup>, [Yicheng Wu](https://yichengwu.github.io/)<sup>3</sup>, [Georgios Evangelidis](https://sites.google.com/site/georgeevangelidis/)<sup>3</sup>, [Ramzi Zahreddine](https://www.linkedin.com/in/ramzi-zahreddine-42a09b87/)<sup>3</sup>, [Guru Krishnan](https://www.linkedin.com/in/krishnanguru/)<sup>3</sup>, [Sizhuo Ma](https://sizhuoma.netlify.app/)<sup>3</sup>, and [Jian Wang](https://jianwang-cmu.github.io/)<sup>3</sup> <br>
-> University of Florida<sup>1</sup>, Stanford University<sup>2</sup>, Snap Research<sup>3</sup><br> 
-> CVPR 2023<br>
-> Paper (Coming Soon)
-
-
-```
-@inproceedings{tilmon2023e3d,
-  title     = {Energy-Efficient Adaptive 3D Sensing},
-  author    = {Tilmon, Brevin and Sun, Zhanghao and Koppal, Sanjeev and Wu, Yicheng and Evangelidis, Georgios and Zahreddine, Ramzi and Krishnan, Guru and Ma, Sizhuo and Wang, Jian},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month     = {June},
-  year      = {2023},
-}
-```
 
 ## Dependencies
 There are full and headless versions. The full version renders hologram information to either a monitor or SLM using OpenGL-CUDA interop, and the headless version simply renders hologram information to an image with no hardware required. You only need to install OpenGL for the full version.
@@ -170,3 +167,16 @@ Our fused CUDA implementation of Fresnel Holography (pointwise integration of di
 <p align="left">
   <img src="data/marketing/benchmark.png" width="225" height="140">
 </p>
+
+## Citation
+
+If you found our code useful, please cite our paper:
+```bibtex
+@inproceedings{tilmon2023e3d,
+  title     = {Energy-Efficient Adaptive 3D Sensing},
+  author    = {Tilmon, Brevin and Sun, Zhanghao and Koppal, Sanjeev and Wu, Yicheng and Evangelidis, Georgios and Zahreddine, Ramzi and Krishnan, Guru and Ma, Sizhuo and Wang, Jian},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2023},
+}
+```
