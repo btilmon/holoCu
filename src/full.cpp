@@ -286,10 +286,13 @@ int full(Optics optics){
     std::cout << std::left << std::setw(22) << "Total: " << phaseTime + simTime + renderTime << "\n" << std::endl;
 
     // OpenGL Cleanup
+    cudaGraphicsUnregisterResource(cuda_tex_resource);
     glDeleteBuffers(1, &quadVbo);
+    glDeleteTextures(1, &opengl_tex_cuda);
     glDeleteVertexArrays(1, &quadVao);
     glDeleteProgram(programID);
     glfwTerminate();
+
 }
 
 int main(int argc, char *argv[]){
