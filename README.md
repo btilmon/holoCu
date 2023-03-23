@@ -17,7 +17,7 @@
 
 
 
-This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. 
+This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1's Maxwell 256-core GPU, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. 
 
 A holographic projector can be considered a software-defined 3D sensor. The hologram of the desired projector pattern is computed in software and subsequently displayed on a spatial light modulator, which then diffracts light to form the hologram within the scene. A key property of holographic projectors is their ability to redistribute light. This means that as the number of hologram points increases, the intensity of each point decreases, since the laser light must be shared among all points. We leverage this light redistribution property to achieve higher signal-to-noise ratios (SNR) and accuracy in active depth sensing compared to state-of-the-art 3D sensors, such as [EpiScan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). 
 
@@ -32,7 +32,7 @@ Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Lig
 </div>
 
 ## CVPR 2023 Demo Video [(High Resolution Youtube Link)](https://www.youtube.com/watch?v=31lPWl-AU_w&feature=youtu.be)
-<p align="center">This is a demo of real-time adaptive active stereo with our holographic projector using the full version of holoCu. The demo runs self contained on a NVIDIA Jetson Nano (Tegra X1 embedded GPU). See the YouTube link for a higher resolution demo.</p>
+<p align="center">This is a demo of real-time adaptive active stereo with our holographic projector using the full version of holoCu. The demo runs self contained on a NVIDIA Jetson Nano (Tegra X1 Maxwell 256-core embedded GPU). See the YouTube link for a higher resolution demo.</p>
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center;">
@@ -50,7 +50,7 @@ There are full and headless versions. The full version renders hologram informat
 
 
 We tested on:
-  * Tegra X1 GPU on NVIDIA Jetson Nano, Ubuntu 18.04 provided from Jetson Nano Developer Kit SD Card Image. We overclocked both CPU and GPU using ```sudo jetson-clocks```.
+  * Tegra X1 Maxwell 256-core GPU on NVIDIA Jetson Nano, Ubuntu 18.04 provided from Jetson Nano Developer Kit SD Card Image. We overclocked both CPU and GPU using ```sudo jetson-clocks```.
   * GTX 1660, Ubuntu 18.04
 
 ## Headless Version
