@@ -35,7 +35,13 @@ Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Lig
   </div>
 </div>
 
+## How it Works
 
+Please see our paper and supplementary for further details. 
+
+<p align="center">
+  <img src="data/marketing/optics.png" width="100%">
+</p>
 
 ## Dependencies
 There are full and headless versions. The full version renders hologram information to either a monitor or SLM using OpenGL-CUDA interop, and the headless version simply renders hologram information to an image with no hardware required. You only need to install OpenGL for the full version.
