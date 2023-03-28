@@ -37,7 +37,7 @@ Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Lig
 
 ## How it Works
 
-Please see our paper and supplementary for further details. 
+Our implementation is a variation of Fresnel Holography pointwise integration. Please see our paper and supplementary for further details. 
 
 <p align="center">
   <img src="data/marketing/optics.png" width="100%">
