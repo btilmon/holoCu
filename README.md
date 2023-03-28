@@ -13,17 +13,20 @@
   University of Florida<sup>1</sup>, Stanford University<sup>2</sup>, Snap Research<sup>3</sup>
 </p>
 
-### <p align="center">Paper (Coming Soon) | [Project Page](https://btilmon.github.io/e3d.html)</p>
+### <p align="center">[[Paper](https://btilmon.github.io/pubs/CVPR_2023_Energy_Efficient_Adaptive_3D_Sensing.pdf)] [[Project Page](https://btilmon.github.io/e3d.html)] [[Supplementary](https://btilmon.github.io/pubs/CVPR_2023_Energy_Efficient_Adaptive_3D_Sensing_Supplementary.pdf)]</p>
 
 
+This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1's Maxwell 256-core GPU, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. We use this code to achieve higher signal-to-noise ratios (SNR) and accuracy in active stereo depth sensing compared to state-of-the-art 3D sensors, such as [Episcan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). Please see the paper, project website, and supplementary for further technical details.
 
-This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1's Maxwell 256-core GPU, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. 
+<div style="display: flex; justify-content: center;">
+  <div style="text-align: center;">
+    <p align="center"><img src="data/marketing/combined.gif" alt="My GIF" width="100%" height="10%"></p>
+  </div>
+</div>
 
-A holographic projector can be considered a software-defined 3D sensor. The hologram of the desired projector pattern is computed in software and subsequently displayed on a spatial light modulator, which then diffracts light to form the hologram within the scene. A key property of holographic projectors is their ability to redistribute light. This means that as the number of hologram points increases, the intensity of each point decreases, since the laser light must be shared among all points. We leverage this light redistribution property to achieve higher signal-to-noise ratios (SNR) and accuracy in active depth sensing compared to state-of-the-art 3D sensors, such as [EpiScan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). 
+## Simulating 3D Sensors with Holography
 
-Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Light Modulator using this repository. The 3D sensors shown below are adaptive (our method), line scanning (EpiScan3D), and full frame (Kinect/Intel RealSense), displayed from left to right. The images from top to bottom represent estimated phase, simulated hologram, and the actual hologram from a spatial light modulator.
-
-
+Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Light Modulator using this repository. The 3D sensors shown below are adaptive (our method), line scanning (EpiScan3D), and full frame (Kinect/Intel RealSense), displayed from left to right. The images from top to bottom represent estimated phase, simulated hologram, and the actual hologram from a spatial light modulator. An adaptive projector is used by default, set ```--projector="line"``` to use line scanning projector or ```--projector="fullFrame"``` for full frame projector instead in ```<full, headless>.sh```. 
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center;">
@@ -31,14 +34,7 @@ Our approach is validated in simulation and on a real Holoeye GAEA 1 Spatial Lig
   </div>
 </div>
 
-## CVPR 2023 Demo Video [(High Resolution Youtube Link)](https://www.youtube.com/watch?v=31lPWl-AU_w&feature=youtu.be)
-<p align="center">This is a demo of real-time adaptive active stereo with our holographic projector using the full version of holoCu. The demo runs self contained on a NVIDIA Jetson Nano (Tegra X1 Maxwell 256-core embedded GPU). See the YouTube link for a higher resolution demo.</p>
 
-<div style="display: flex; justify-content: center;">
-  <div style="text-align: center;">
-    <p align="center"><img src="data/marketing/output.gif" alt="My GIF" width="100%" height="10%"></p>
-  </div>
-</div>
 
 ## Dependencies
 There are full and headless versions. The full version renders hologram information to either a monitor or SLM using OpenGL-CUDA interop, and the headless version simply renders hologram information to an image with no hardware required. You only need to install OpenGL for the full version.
@@ -156,13 +152,6 @@ Total:                2.69008
 <p align="left">
   <img src="data/marketing/lineDemo.gif" alt="My GIF" width="320" height="180">
 </p>
-
-
-
-
-## Projectors
-
-In our paper we compare different 3D sensing techniques including full frame (such as Kinect and Intel RealSense) and line scanning (such as EpiScan3D) to our proposed adaptive approach. An adaptive projector is used by default, set ```--projector="line"``` to use line scanning projector or ```--projector="fullFrame"``` for full frame projector instead in ```<full, headless>.sh```. 
 
 ## Benchmarks
 
