@@ -20,7 +20,7 @@ This repository contains a CUDA implementation/simulator for the holographic pro
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center;">
-    <p align="center"><img src="data/marketing/combined.gif" alt="My GIF" width="100%" height="10%"></p>
+    <p align="center"><img src="data/marketing/combined.gif" alt="My GIF" width="60%" height="10%"></p>
   </div>
 </div>
 
