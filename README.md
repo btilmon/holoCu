@@ -10,19 +10,20 @@
   <a href="https://www.linkedin.com/in/krishnanguru/">Guru Krishnan</a><sup>3</sup>,
   <a href="https://sizhuoma.netlify.app/">Sizhuo Ma</a><sup>3</sup>, 
   <a href="https://jianwang-cmu.github.io/">Jian Wang</a><sup>3</sup> <br>
-  University of Florida<sup>1</sup>, Stanford University<sup>2</sup>, Snap Research<sup>3</sup>
+  University of Florida<sup>1</sup>, Stanford University<sup>2</sup>, Snap Inc.<sup>3</sup>
 </p>
 
 ### <p align="center">[[Paper](https://btilmon.github.io/pubs/CVPR_2023_Energy_Efficient_Adaptive_3D_Sensing.pdf)] [[Project Page](https://btilmon.github.io/e3d.html)] [[Supplementary](https://btilmon.github.io/pubs/CVPR_2023_Energy_Efficient_Adaptive_3D_Sensing_Supplementary.pdf)]</p>
-
-
-This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1's Maxwell 256-core GPU, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. We use this code to achieve higher signal-to-noise ratios (SNR) and accuracy in active stereo depth sensing compared to state-of-the-art 3D sensors, such as [Episcan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). Please see the paper, project website, and supplementary for further technical details.
 
 <div style="display: flex; justify-content: center;">
   <div style="text-align: center;">
     <p align="center"><img src="data/marketing/combined.gif" alt="My GIF" width="60%" height="10%"></p>
   </div>
 </div>
+
+This repository contains a CUDA implementation/simulator for the holographic projector introduced in our CVPR 2023 paper "Energy Efficient Adaptive 3D Sensing". The implementation enables real-time sparse hologram generation on embedded NVIDIA GPUs, such as the Tegra X1's Maxwell 256-core GPU, as well as on most other NVIDIA GPUs, through a fused CUDA kernel of Fresnel Holography. We use this code to achieve higher signal-to-noise ratios (SNR) and accuracy in active stereo depth sensing compared to state-of-the-art 3D sensors, such as [Episcan3D](http://www.cs.cmu.edu/~ILIM/episcan3d/html/index.html) and [Microsoft Kinect](https://azure.microsoft.com/en-us/products/kinect-dk)/[Intel RealSense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html). Please see the paper, project website, and supplementary for further technical details.
+
+
 
 ## Simulating 3D Sensors with Holography
 
